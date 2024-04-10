@@ -1,15 +1,17 @@
 #include <iostream>
 int main () {
-    int a, b, quero meu saldo;
-    std string nome = "quero meu saldo";
-    printf("Digite 1 caso queira ver seu saldo: ");
+    int a, b;
+    b = 1000;
+    printf("O seu saldo é de 1000 reais. Quanto quer retirar? ");
     scanf("%d", &a);
     
-    if ((a > 0) && (a < 2)) {
-        printf("Você possui (1000) reais na sua conta : ");
-        scanf("%d", &b);
-    } else {
-        printf("O número é negativo.\n");
+    if ((b >= a) && (a > 0)) {
+    printf("Você consegue sacar seu saldo\n");
+
+     } else {
+        printf("Você não consegue sacar o saldo :/\n");
     }
+
+      
     return 0;
 }
